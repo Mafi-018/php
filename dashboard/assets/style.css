@@ -1,0 +1,255 @@
+:root {
+    --cor--pretoClaro: #1E1E2D;
+    --cor--corpo: #F5F5F5;
+}
+
+/* Aqui começa o css da pagina de cadastro de usuario */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#cad {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+  
+.signup {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+  
+.signup label {
+    display: none;
+}
+  
+.signup input{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 5.5px;
+}
+  
+.signup button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+  
+.signup button:hover {
+    background-color: #3e8e41;
+}
+  
+.sucess, .error {
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+  
+.sucess {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+}
+  
+.error {
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    color: #a94442;
+}
+
+/* aqui começa css do index */
+.div-global{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.div-menu-lateral{
+    background-color: var(--cor--pretoClaro);
+}
+
+.div-menu-lateral .logo{
+    margin: 15px;
+}
+
+.div-menu-lateral button{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    border: none;
+    background-color: var(--cor--pretoClaro);
+    margin: 20px;
+    color: white;
+}
+
+.topo{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.topo nav a{
+    color: black;
+    padding: 10px;
+}
+
+.topo nav a:hover{
+    background-color: gray;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.topo .dashboards{
+    color: #009EF7;
+}
+
+.corpo {
+    background-color: var(--cor--corpo);
+    display: grid;
+}
+
+.corpo h1{
+    margin-left: 100px;
+}
+
+.painel-controle {
+    /* margin-left: 100px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   
+}
+
+.painel-controle img{
+    width: 15%;
+}
+
+.vendas-mes, .produtos-ativos, .fornecedores, .clientes{
+    margin: 20px;
+    border-radius: 13px;
+}
+
+.painel-controle .produtos-ativos,
+.fornecedores,
+.clientes{
+    background-color: white;
+    /* padding: 10px; */
+}
+
+.vendas-mes{
+    background: linear-gradient(180deg, rgba(92, 78, 78, 0) 0%, rgba(40, 206, 86, 0.37) 100%);
+    filter: drop-shadow(10px 11px 15px rgba(76, 87, 125, 0.15));
+}
+
+/* .vendas-mes i{
+    font-size: 35px;
+} */
+
+
+
+
+/* Aqui começa o css da pagina de login */
+
+.menu{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu input{
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 5.5px;
+}
+
+.menu button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.menu button:hover {
+    background-color: #3e8e41;
+}
+
+.menu .imp{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.menu h1{
+    font-size: medium;
+    margin: 20px;
+}
+
+/* Aqui começa o css da pagina de cadastro de produto */
+
+#data{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 5.5px;
+}
+
+.vendas-mes{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.painel-controle div{
+    width: 90%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    gap: 10px;
+}
+
+.grid button {
+    cursor: pointer;
+}
+
+.grid button img{
+    display: block;
+    margin: 0 auto !important;
+}
+
+.grid button div{
+    margin: 0 auto;
+}
